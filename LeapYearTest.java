@@ -6,13 +6,10 @@ public class LeapYearTest {
 
     @Test
     public void returnsBooleanIfLeapYear() {
-        assertEquals(true, leapYear(1992));
-        assertEquals(false, leapYear(2001));
-        assertEquals(true, leapYear(2008));
-        assertEquals(false, leapYear(1900));
-    }
-
-    private Object leapYear(int i) {
-        return null;
+        LeapYear luckyLeapYear = new LeapYear();
+        assertEquals(true, luckyLeapYear.leapYear(1996));
+        assertEquals(false, luckyLeapYear.leapYear(2001));
+        assertEquals(true, luckyLeapYear.leapYear(2000));
+        assertEquals(false, luckyLeapYear.leapYear(1900));
     }
 }
